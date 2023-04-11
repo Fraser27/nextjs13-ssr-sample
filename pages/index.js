@@ -7,7 +7,7 @@ import car2 from '../public/car2.jpg'
 import car3 from '../public/car3.jpg'
 
 
-export default function Home() {
+function Home() {
   return (
     <div className={styles.container}>
       <Head>
@@ -28,10 +28,17 @@ export default function Home() {
       </h1>
 
       <Image
-    src={car2} // Route of the image file
-    height={300} // Desired size with correct aspect ratio
-    width={300} // Desired size with correct aspect ratio
+    src={car2} 
+    height={300} 
+    width={300} 
     alt="Cars"
+  />
+
+<Image
+    src= "/car3.jpg"
+    height={300} 
+    width={300} 
+    alt="Cars3"
   />
 
         <div className={styles.grid}>
@@ -129,3 +136,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home
