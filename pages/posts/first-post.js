@@ -2,6 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Head from 'next/head';
 
+import car1 from '../../public/car1.jpg'
+
 export async function getServerSideProps() {
     // Fetch data from external data source
     const res = await fetch(`https://jsonplaceholder.typicode.com/todos`)
@@ -18,7 +20,7 @@ const FirstPost = ({ todos }) => {
             <h2><Link href="/">Back to home</Link></h2>
             </li>
             <li><Image
-                src="/car1.jpg" // Route of the image file
+                src={car1} // Route of the image file
                 height={300} // Desired size with correct aspect ratio
                 width={300} // Desired size with correct aspect ratio
                 alt="Cars"

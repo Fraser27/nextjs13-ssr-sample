@@ -3,6 +3,9 @@ import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import Script from 'next/script';
+import car2 from '../public/car2.jpg'
+import car3 from '../public/car3.jpg'
+
 
 export default function Home() {
   return (
@@ -25,7 +28,7 @@ export default function Home() {
       </h1>
 
       <Image
-    src="/car2.jpg" // Route of the image file
+    src={car2} // Route of the image file
     height={300} // Desired size with correct aspect ratio
     width={300} // Desired size with correct aspect ratio
     alt="Cars"
