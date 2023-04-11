@@ -31,6 +31,7 @@ function Home() {
     width={300} 
     alt="Cars"
   />
+  <img src="/car2.jpg" />
 
 <Image
     src= "/car3.jpg"
