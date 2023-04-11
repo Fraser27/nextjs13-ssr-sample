@@ -18,7 +18,7 @@ const FirstPost = ({ todos }) => {
             <h2><Link href="/">Back to home</Link></h2>
             </li>
             <li><Image
-                src="/images/car1.jpg" // Route of the image file
+                src="/car1.jpg" // Route of the image file
                 height={300} // Desired size with correct aspect ratio
                 width={300} // Desired size with correct aspect ratio
                 alt="Cars"

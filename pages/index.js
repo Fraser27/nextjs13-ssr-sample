@@ -25,7 +25,7 @@ export default function Home() {
       </h1>
 
       <Image
-    src="/images/car2.jpg" // Route of the image file
+    src="/car2.jpg" // Route of the image file
     height={300} // Desired size with correct aspect ratio
     width={300} // Desired size with correct aspect ratio
     alt="Cars"
