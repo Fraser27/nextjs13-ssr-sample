@@ -1,22 +1,35 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import Link from 'next/link';
+import Image from 'next/image';
+import Script from 'next/script';
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Sample Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <Script
+        src="https://connect.facebook.net/en_US/sdk.js"
+        strategy="lazyOnload"
+        onLoad={() =>
+          console.log(`script loaded correctly, window.FB has been populated`)
+        }
+      />
       </Head>
 
       <main>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <h1 className="title">
+          <Link href="/posts/first-post">More Cars!</Link>
+      </h1>
 
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
+      <Image
+    src="/images/car2.jpg" // Route of the image file
+    height={300} // Desired size with correct aspect ratio
+    width={300} // Desired size with correct aspect ratio
+    alt="Cars"
+  />
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
