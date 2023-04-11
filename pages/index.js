@@ -3,6 +3,8 @@ import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import Script from 'next/script';
+import car2 from '/public/car2.jpg'
+import car1 from '/public/car1.png'
 
 
 function Home() {
@@ -26,12 +28,18 @@ function Home() {
       </h1>
 
       <Image
-    src="/car2.jpg" 
+    src={car2} 
     height={300} 
     width={300} 
     alt="Cars"
   />
-  <img src="/car2.jpg" />
+
+<Image
+    src={car1} 
+    height={300} 
+    width={300} 
+    alt="Cars"
+  />
 
 <Image
     src= "/car3.jpg"
